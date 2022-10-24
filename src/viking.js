@@ -8,7 +8,6 @@ receiveDamage(damage){this.health -= damage;}
 }
 
 // Viking
-
 class Viking extends Soldier {
     constructor(name,health, strength){
         super(health, strength);
@@ -31,11 +30,13 @@ class Saxon extends Soldier{
 }
 
 // War
-class War {}
-const war1 = new War()
-const viking1 = new Viking('Ragnar', 100, 150);
-const saxon1 = new Saxon(150, 100);
-viking1.attack()
+class War {
+    constructor(){
+        this.vikingArmy = []
+        this.saxonArmy = []
+        
+    }
 
-war1.addViking(viking1)
-war1.addSaxon(saxon1)
+}
+
+
